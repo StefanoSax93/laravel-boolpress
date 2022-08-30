@@ -49642,9 +49642,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Hybri\Documents\Boolean\Esercizi\laravel-api\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\Users\Hybri\Documents\Boolean\Esercizi\laravel-api\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! C:\Users\Hybri\Documents\Boolean\Esercizi\laravel-api\resources\sass\frontend\frontend.scss */"./resources/sass/frontend/frontend.scss");
+__webpack_require__(/*! C:\Users\Hybri\Documents\Boolean\Esercizi\laravel-boolpress\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Users\Hybri\Documents\Boolean\Esercizi\laravel-boolpress\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\Users\Hybri\Documents\Boolean\Esercizi\laravel-boolpress\resources\sass\frontend\frontend.scss */"./resources/sass/frontend/frontend.scss");
 
 
 /***/ })

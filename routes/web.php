@@ -39,3 +39,7 @@ Route::middleware("auth")
     Route::get("/tags","TagController@index")->name("tags.index");
     Route::get("/tags/{tag}","TagController@show")->name("tags.show");
 });
+
+Route::get("{any?}", function () {
+    return view("welcome");
+})->where("any", ".*");

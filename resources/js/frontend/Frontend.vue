@@ -3,12 +3,8 @@
 
         <Navbar></Navbar>
 
-        <div class="container">
-            <div>
-                <h2 class="text-uppercase my-4">Lista post</h2>
-
-                <PostsList></PostsList>
-            </div>
+        <div class="container"> 
+            <router-view></router-view>        
         </div>
     </div>
 

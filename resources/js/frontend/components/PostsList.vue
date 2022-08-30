@@ -8,7 +8,9 @@
                     <div class="card-body overflow-auto">
                         <h5 class="card-title">{{  post.title  }}</h5>
                         <p class="card-text" v-html="post.content"></p>
-                        <a :href="'/admin/posts/'+ post.slug" class="btn btn-primary text-uppercase">Visualizza post</a>
+                        <router-link :to="{ name: 'posts.show', params: { slug: post.slug } }" class="btn btn-primary text-uppercase">
+                            visualizza post
+                        </router-link>
                     </div>
                 </div>
             </div>

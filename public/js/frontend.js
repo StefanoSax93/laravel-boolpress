@@ -2345,31 +2345,60 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div", [_c("h2", {
-    staticClass: "text-uppercase my-4"
-  }, [_vm._v(_vm._s(_vm.post.title))]), _vm._v(" "), _c("h3", [_c("strong", [_vm._v("AUTORE: ")]), _vm._v(" " + _vm._s(_vm.post.user.name))]), _vm._v(" "), _c("img", {
-    staticStyle: {
-      width: "300px"
-    },
+  return _c("div", [_c("div", {
+    staticClass: "container"
+  }, [_c("div", {
+    staticClass: "row justify-content-center"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("div", {
+    staticClass: "d-flex justify-content-between align-items-center my-4"
+  }, [_c("h1", [_vm._v("Visualizzazione post " + _vm._s(_vm.post.title))]), _vm._v(" "), _c("a", {
+    staticClass: "btn btn-primary",
+    attrs: {
+      href: "/"
+    }
+  }, [_c("svg", {
+    staticClass: "feather feather-activity",
+    attrs: {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "24",
+      height: "24",
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      "stroke-width": "2",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    }
+  }, [_c("line", {
+    attrs: {
+      x1: "20",
+      y1: "12",
+      x2: "4",
+      y2: "12"
+    }
+  }), _vm._v(" "), _c("polyline", {
+    attrs: {
+      points: "10 18 4 12 10 6"
+    }
+  })]), _vm._v(" Tutti i posts\n                    ")])]), _vm._v(" "), _c("div", {
+    staticClass: "row mb-3"
+  }, [_c("div", {
+    staticClass: "col-7"
+  }, [_c("img", {
+    staticClass: "img-fluid rounded",
     attrs: {
       src: _vm.post.cover_img,
       alt: ""
     }
-  }), _vm._v(" "), _c("p", {
-    staticClass: "my-3"
-  }, [_c("strong", {
-    staticClass: "text-uppercase"
-  }, [_vm._v("descrizione:")]), _vm._v(" " + _vm._s(_vm.post.content))]), _vm._v(" "), _vm.post.category ? _c("div", {
-    staticClass: "mb-3"
-  }, [_c("h4", {
-    staticClass: "text-uppercase"
-  }, [_vm._v("Categoria")]), _vm._v("\n        " + _vm._s(_vm.post.category.name) + "\n    ")]) : _vm._e(), _vm._v(" "), _vm.post.tags.length > 0 ? _c("div", [_c("h4", {
-    staticClass: "text-uppercase"
-  }, [_vm._v("Tags")]), _vm._v(" "), _c("ul", _vm._l(_vm.post.tags, function (tag) {
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "col"
+  }, [_c("dl", [_c("dt", [_vm._v("Titolo")]), _vm._v(" "), _c("dd", [_vm._v(_vm._s(_vm.post.title))]), _vm._v(" "), _c("dt", [_vm._v("Slug")]), _vm._v(" "), _c("dd", [_vm._v(_vm._s(_vm.post.slug))]), _vm._v(" "), _c("dt", [_vm._v("Contenuto")]), _vm._v(" "), _c("dd", [_vm._v(_vm._s(_vm.post.content))]), _vm._v(" "), _c("dt", [_vm._v("Autore")]), _vm._v(" "), _c("dd", [_vm._v(_vm._s(_vm.post.user.name))]), _vm._v(" "), _c("dt", [_vm._v("Categoria")]), _vm._v(" "), _vm.post.category ? _c("dd", [_vm._v(_vm._s(_vm.post.category.name))]) : _vm._e(), _vm._v(" "), _vm.post.tags.length > 0 ? _c("dt", [_vm._v("Tags")]) : _vm._e(), _vm._v(" "), _c("dd", [_c("ul", _vm._l(_vm.post.tags, function (tag) {
     return _c("li", {
       key: tag.id
     }, [_vm._v(_vm._s(tag.name))]);
-  }), 0)]) : _vm._e()]);
+  }), 0)])])])])])])])]);
 };
 
 var staticRenderFns = [];

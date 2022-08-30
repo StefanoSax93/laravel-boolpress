@@ -1,0 +1,50 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.main-container {
+    display: flex;
+    min-height: 92.3vh;
+
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .main-scroll-container {
+            overflow: auto;
+            flex: 1;
+        }
+    }
+}
+
+.text-bg-dark {
+    background-color: rgba(20, 20, 20, 0.984);
+
+    .nav-link {
+        color: white;
+
+    }
+
+    .nav-link.active {
+        background-color: orange;
+        color: black;
+    }
+
+    svg {
+        fill: var(--bs-light);
+    }
+}
+
+.btn-back {
+    color: orange;
+
+    &:hover {
+        color: darken($color: orange, $amount: 20);
+    }
+}

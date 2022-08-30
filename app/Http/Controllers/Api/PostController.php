@@ -11,7 +11,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::paginate(6);
+        $posts = Post::orderBy('updated_at', 'desc')->paginate(6);
 
         $posts->map(function ($post) {
 

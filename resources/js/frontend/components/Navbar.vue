@@ -9,15 +9,27 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                
-                <ul class="navbar-nav mr-auto">
 
+                <ul class="navbar-nav mr-auto text-uppercase ml-4">
+                    <li class="nav-item">
+                        <router-link class="nav-link" to="/">Home</router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link" :to="{ name: 'contacts' }">Contatti</router-link>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/posts">Post admin</a>
+                    </li>
                 </ul>
 
-                
+
                 <ul class="navbar-nav ml-auto text-uppercase">
-                        <a href="/login" class="text-dark mr-2 text-decoration-none">login</a>
+                    <li>
+                        <a href="/login" class="text-dark mr-4 text-decoration-none">login</a>
+                    </li>
+                    <li>
                         <a href="/register" class="text-dark text-decoration-none">register</a>
+                    </li>
                 </ul>
             </div>
         </div>

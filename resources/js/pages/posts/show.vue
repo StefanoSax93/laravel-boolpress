@@ -29,10 +29,10 @@
                                 <dd>{{  post.content  }}</dd>
 
                                 <dt>Autore</dt>
-                                <dd>{{  post.user.name  }}</dd>
+                                <dd v-if="post.user">{{  post.user.name  }}</dd>
                                 <dt>Categoria</dt>
                                 <dd v-if="post.category">{{  post.category.name  }}</dd>
-                                <dt v-if="post.tags.length > 0">Tags</dt>
+                                <dt v-if="post.tags && post.tags.length > 0">Tags</dt>
                                 <dd>
                                     <ul>
                                         <li v-for="tag in post.tags" :key="tag.id">{{  tag.name  }}</li>
@@ -52,7 +52,7 @@ import axios from 'axios';
 export default {
     data() {
         return {
-            post: []
+            post: {}
         }
     },
     mounted() {

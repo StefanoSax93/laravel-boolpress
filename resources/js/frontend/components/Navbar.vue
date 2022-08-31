@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-md navbar-light bg-nav shadow-sm">
         <div class="container">
             <a class="navbar-brand text-uppercase" href="/">Boolpress</a>
 
@@ -11,7 +11,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <ul class="navbar-nav mr-auto text-uppercase ml-4">
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <router-link class="nav-link" to="/">Home</router-link>
                     </li>
                     <li class="nav-item">
@@ -35,3 +35,12 @@
         </div>
     </nav>
 </template>
+
+<style lang="scss">
+    .bg-nav {
+        background-color: orange;
+
+    }
+
+    
+</style>

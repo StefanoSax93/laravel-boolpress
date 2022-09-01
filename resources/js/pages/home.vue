@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <h1 class="text-uppercase my-3">Home Page</h1>
 
 

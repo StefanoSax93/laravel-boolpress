@@ -7,7 +7,7 @@
                 <h1 class="text-uppercase font-weight-bold">lista tags</h1>
                 @foreach ($tags as $tag)
                     <div>
-                        <a href="{{ route('admin.tags.show', $tag->id) }}" class="mb-4 text-capitalize h3 text-info">{{ $tag->name }}</a>
+                        <a href="{{ route('admin.tags.show', $tag->id) }}" class="mb-4 text-capitalize h3 text-info text-decoration-none">{{ $tag->name }}</a>
                     </div>
                 @endforeach
             </div>

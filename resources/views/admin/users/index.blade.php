@@ -25,7 +25,7 @@
                                 <td>
                                     @foreach ($user->posts as $post)
                                         <div>
-                                            <a href="{{ route('admin.posts.show', ['post' => $post->slug]) }}">{{ $post->title }}</a>
+                                            <a href="{{ route('admin.posts.show', ['post' => $post->slug]) }}" class="text-decoration-none">{{ $post->title }}</a>
                                         </div>
                                     @endforeach
                                 </td>

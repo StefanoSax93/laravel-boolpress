@@ -3,16 +3,17 @@
         <h1 class="text-uppercase my-3">Pagina Contatti</h1>
 
         <form @submit.prevent="onFormSubmit">
-            <div class="form-group">
-                <label>NOME</label>
+            <div class="mb-3">
+                <label class="form-label text-uppercase">nome</label>
                 <input type="text" placeholder="Inserisci il nome" class="form-control" v-model="name">
             </div>
 
-            <div class="form-group">
+            <div class="mb-3">
+                <label class="form-label text-uppercase">messaggio</label>
                 <textarea cols="30" rows="10" placeholder="Inserisci un messaggio" class="form-control" v-model="message"></textarea>
             </div>
 
-            <div class="form-group">
+            <div class="mb-3">
                 <button type="submit" class="btn btn-outline-success">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"

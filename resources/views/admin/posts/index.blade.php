@@ -30,7 +30,7 @@
                                 <td>{{ $post->user ? $post->user->name : '' }}</td>
                                 <td>
                                     @foreach ($post->tags as $tag)
-                                        <a href="{{ route('admin.tags.show', $tag->id) }}">{{ $tag->name }}</a>
+                                        <a href="{{ route('admin.tags.show', $tag->id) }}" class="text-decoration-none">{{ $tag->name }}</a>
                                         @if (!$loop->last)
                                             <span> -</span>
                                         @endif

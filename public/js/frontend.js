@@ -2112,7 +2112,7 @@ var render = function render() {
       _c = _vm._self._c;
 
   return _c("nav", {
-    staticClass: "navbar navbar-expand-md navbar-light bg-nav shadow-sm"
+    staticClass: "navbar navbar-expand-md navbar-light bg-nav shadow-sm sticky-top"
   }, [_c("div", {
     staticClass: "container"
   }, [_c("a", {
@@ -2126,7 +2126,7 @@ var render = function render() {
       id: "navbarSupportedContent"
     }
   }, [_c("ul", {
-    staticClass: "navbar-nav mr-auto text-uppercase ml-4"
+    staticClass: "navbar-nav me-auto text-uppercase ml-4"
   }, [_c("li", {
     staticClass: "nav-item"
   }, [_c("router-link", {
@@ -2154,8 +2154,8 @@ var staticRenderFns = [function () {
     staticClass: "navbar-toggler",
     attrs: {
       type: "button",
-      "data-toggle": "collapse",
-      "data-target": "#navbarSupportedContent",
+      "data-bs-toggle": "collapse",
+      "data-bs-target": "#navbarSupportedContent",
       "aria-controls": "navbarSupportedContent",
       "aria-expanded": "false"
     }
@@ -2179,9 +2179,9 @@ var staticRenderFns = [function () {
       _c = _vm._self._c;
 
   return _c("ul", {
-    staticClass: "navbar-nav ml-auto text-uppercase"
+    staticClass: "navbar-nav ms-auto text-uppercase"
   }, [_c("li", [_c("a", {
-    staticClass: "text-dark mr-4 text-decoration-none",
+    staticClass: "text-dark me-4 text-decoration-none",
     attrs: {
       href: "/login"
     }
@@ -2284,7 +2284,7 @@ var render = function render() {
       _c = _vm._self._c;
 
   return _c("div", [_c("div", {
-    staticClass: "row row-cols-2"
+    staticClass: "row row-cols-3 mt-4"
   }, _vm._l(_vm.posts, function (post) {
     return _c("div", {
       key: post.id,
@@ -2292,7 +2292,7 @@ var render = function render() {
     }, [_c("div", {
       staticClass: "card mb-4",
       staticStyle: {
-        height: "475px"
+        height: "380px"
       }
     }, [post.cover_img ? _c("img", {
       staticClass: "card-img-top",
@@ -2307,7 +2307,7 @@ var render = function render() {
     }), _vm._v(" "), _c("div", {
       staticClass: "card-body overflow-auto"
     }, [_c("h5", {
-      staticClass: "card-title"
+      staticClass: "card-title text-uppercase"
     }, [_vm._v(_vm._s(post.title))]), _vm._v(" "), _c("p", {
       staticClass: "card-text",
       domProps: {
@@ -2423,8 +2423,10 @@ var render = function render() {
       }
     }
   }, [_c("div", {
-    staticClass: "form-group"
-  }, [_c("label", [_vm._v("NOME")]), _vm._v(" "), _c("input", {
+    staticClass: "mb-3"
+  }, [_c("label", {
+    staticClass: "form-label text-uppercase"
+  }, [_vm._v("nome")]), _vm._v(" "), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -2446,8 +2448,10 @@ var render = function render() {
       }
     }
   })]), _vm._v(" "), _c("div", {
-    staticClass: "form-group"
-  }, [_c("textarea", {
+    staticClass: "mb-3"
+  }, [_c("label", {
+    staticClass: "form-label text-uppercase"
+  }, [_vm._v("messaggio")]), _vm._v(" "), _c("textarea", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -2470,7 +2474,7 @@ var render = function render() {
       }
     }
   })]), _vm._v(" "), _c("div", {
-    staticClass: "form-group"
+    staticClass: "mb-3"
   }, [_c("button", {
     staticClass: "btn btn-outline-success",
     attrs: {

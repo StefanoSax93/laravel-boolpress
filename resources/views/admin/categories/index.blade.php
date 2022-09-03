@@ -18,7 +18,7 @@
                                 
                                 @foreach ($category->posts as $post)
                                     <div>
-                                        <a href="{{ route('admin.posts.show', ['post' => $post->slug]) }}">
+                                        <a href="{{ route('admin.posts.show', ['post' => $post->slug]) }}" class="text-decoration-none">
                                             {{ $post->title }}
                                         </a>
                                     </div>

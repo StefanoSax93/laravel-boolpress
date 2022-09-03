@@ -1,12 +1,12 @@
 <template>
     <div>
-        <div class="row row-cols-2">
+        <div class="row row-cols-3 mt-4">
             <div class="col" v-for="post in posts" :key="post.id">
-                <div class="card mb-4" style="height: 475px">
+                <div class="card mb-4" style="height: 380px">
                     <img v-if="post.cover_img" :src="post.cover_img" class="card-img-top">
                     <img v-else src="/images/image-placeholder.jpg" class="card-img-top">
                     <div class="card-body overflow-auto">
-                        <h5 class="card-title">{{  post.title  }}</h5>
+                        <h5 class="card-title text-uppercase">{{  post.title  }}</h5>
                         <p class="card-text" v-html="post.content"></p>
                         <router-link :to="{ name: 'posts.show', params: { slug: post.slug } }" class="btn btn-primary text-uppercase">
                             visualizza post

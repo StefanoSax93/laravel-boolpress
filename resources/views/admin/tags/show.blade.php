@@ -14,9 +14,13 @@
                     <h1 class="text-uppercase">post associati</h1>
                     <div>
                         @foreach($tag->posts as $post)
-                        <a href="{{ route('admin.posts.show', ['post' => $post->slug]) }}">
+                        <a href="{{ route('admin.posts.show', ['post' => $post->slug]) }}" class="text-decoration-none">
                             {{ $post->title }}
                         </a>
+
+                        @if(!$loop->last) 
+                            <span class="mx-2">-</span>
+                        @endif
                         @endforeach
                     </div>
                 </div>

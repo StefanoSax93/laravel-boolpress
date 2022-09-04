@@ -24,7 +24,7 @@
                     <div class="mb-3">
                         <label for="cover_img_file" class="form-label">Immagine di copertina</label>
 
-                        <div class="d-flex">
+                        <div class="d-flex align-items-center">
                             @if($post->cover_img) 
                                 <img class="img-thumbnail" style="width: 150px"
                                 src="{{ asset('storage/' . $post->cover_img) }}">

@@ -20,26 +20,26 @@
                     enctype="multipart/form-data">
                     @csrf
                     @method('PATCH')
-                    <div class="form-group">
-                        <label>Nome</label>
+                    <div class="mb-3">
+                        <label class="form-label">Nome</label>
                         <input type="text" name="name" class="form-control @error('name') is-invalid @enderror"
                             placeholder="Inserisci il nome" value="{{ old('name', $user->name) }}" required>
                         @error('name')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
-                    <div class="form-group">
-                        <label>Email</label>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
                         <input type="text" name="email" class="form-control @error('email') is-invalid @enderror"
                             placeholder="Inserisci l'email" value="{{ old('email', $user->email) }}" required>
                         @error('email')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
-                    <div class="form-group">
+                    <div class="mb-3">
                         <label for="profile_img_file" class="form-label">Immagine profilo</label>
 
-                        <div class="d-flex">
+                        <div class="d-flex align-items-center">
                             @if($user->profile_img) 
                                 <img class="img-thumbnail" style="width: 150px"
                                 src="{{ asset('storage/' . $user->profile_img) }}">
@@ -49,15 +49,15 @@
                             @endif
 
                             <input type="file" name="profile_img"
-                                class="form-control-file pl-2 @error('profile_img') is-invalid @enderror" id="profile_img_file"
+                                class="form-control h-100 ms-2 @error('profile_img') is-invalid @enderror" id="profile_img_file"
                                 value="{{ old('profile_img', $user->profile_img) }}">
                         </div>
                         @error('profile_img')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
-                    <div class="form-group">
-                        <label>Indirizzo</label>
+                    <div class="mb-3">
+                        <label class="form-label">Indirizzo</label>
                         <input type="text" name="address" class="form-control @error('address') is-invalid @enderror"
                             placeholder="Inserisci l'indirizzo"
                             value="{{ old('address', $user->details ? $user->details->address : '') }}" required>
@@ -65,8 +65,8 @@
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
-                    <div class="form-group">
-                        <label>Città</label>
+                    <div class="mb-3">
+                        <label class="form-label">Città</label>
                         <input type="text" name="city" class="form-control @error('city') is-invalid @enderror"
                             placeholder="Inserisci la città"
                             value="{{ old('city', $user->details ? $user->details->city : '') }}" required>
@@ -74,8 +74,8 @@
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
-                    <div class="form-group">
-                        <label>Provincia</label>
+                    <div class="mb-3">
+                        <label class="form-label">Provincia</label>
                         <input type="text" name="province" class="form-control @error('province') is-invalid @enderror"
                             placeholder="Inserisci la provincia"
                             value="{{ old('province', $user->details ? $user->details->province : '') }}" required>
@@ -83,8 +83,8 @@
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
-                    <div class="form-group">
-                        <label>Telefono</label>
+                    <div class="mb-3">
+                        <label class="form-label">Telefono</label>
                         <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror"
                             placeholder="Inserisci il numero di telefono"
                             value="{{ old('phone', $user->details ? $user->details->phone : '') }}" required>
@@ -92,7 +92,7 @@
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
-                    <div class="form-group">
+                    <div class="mb-3">
                         <button type="submit" class="btn btn-success">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"

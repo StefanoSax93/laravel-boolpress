@@ -1,3 +1,4 @@
+require('./bootstrap');
 import Vue from "vue";
 import Frontend from "./frontend/Frontend.vue";
 import VueRouter from "vue-router";

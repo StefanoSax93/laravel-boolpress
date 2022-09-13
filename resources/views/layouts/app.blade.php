@@ -30,7 +30,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light shadow-sm sticky-top" style="background-color: orange">
             <div class="container-fluid">
-                <a class="navbar-brand text-uppercase" href="{{ route('home') }}">
+                <a class="navbar-brand text-uppercase ms-4" href="{{ route('home') }}">
                     home pubblica
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -58,7 +58,7 @@
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown me-4">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{-- Creo una variabile poiché non posso usare Auth:: in src --}}
@@ -77,8 +77,8 @@
                                     {{ Auth::user()->name }}
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" style="color: orange" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                     document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}

@@ -13,10 +13,10 @@
 <script>
 
 import Navbar from './components/Navbar.vue';
-import PostsList from './components/PostsList.vue';
+
 
 export default {
-    components: { Navbar, PostsList },
+    components: { Navbar },
     data() {
         return {
 

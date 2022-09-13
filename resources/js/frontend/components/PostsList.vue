@@ -17,7 +17,7 @@
         </div>
 
         <Pagination :current-page="paginationData.current_page" :next-page="paginationData.current_page + 1"
-            :total-pages="paginationData.last_page" @changePage="onChangePage"></Pagination>
+            :total-pages="paginationData.last_page" @changePage="onChangePage" style="margin-bottom:-20px" class="pb-2"></Pagination>
     </div>
 
 

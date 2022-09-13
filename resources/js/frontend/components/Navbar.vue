@@ -3,10 +3,12 @@
         <div class="container">
             <a class="navbar-brand text-uppercase" href="/">Boolpress</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -16,6 +18,9 @@
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" :to="{ name: 'contacts' }">Contatti</router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link" :to="{ name: 'posts.index' }">Posts</router-link>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/admin/posts">Post admin</a>
@@ -37,10 +42,7 @@
 </template>
 
 <style lang="scss">
-    .bg-nav {
-        background-color: orange;
-
-    }
-
-    
+.bg-nav {
+    background: linear-gradient(to right, orange, purple);
+}
 </style>
